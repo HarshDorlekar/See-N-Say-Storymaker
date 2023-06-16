@@ -1,0 +1,34 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/Media/playtime.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="singalbutton">
+        <button onclick="generatePhrase('nouns')">Generate Noun</button>
+        <button onclick="generatePhrase('verbs')">Generate Verb</button>
+        <button onclick="generatePhrase('adjectives')">
+          Generate Adjective
+        </button>
+        <button onclick="generatePhrase('nounspart2')">
+          Generate Noun (Part 2)
+        </button>
+        <button onclick="generatePhrase('places')">Generate Place</button>
+      </div>
+    </div>
+    <div class="featurebuttons">
+      <button onclick="generateFullPhrase()">Generate Full Phrase</button>
+      <button onclick="readPhrase()">Read Aloud</button>
+    </div>
+    <div class="clearbtn">
+      <button onclick="clearText()">Clear Text</button>
+    </div>
+    <p id="phrase"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
